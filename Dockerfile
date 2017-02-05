@@ -17,6 +17,6 @@ RUN curl -O --location --silent --show-error https://downloads.gradle.org/distri
     	&& ln -s /opt/gradle-${GRADLE_VERSION} /opt/gradle \
     	&& rm -f gradle-${GRADLE_VERSION}-bin.zip
 
-ENV PATH $PATH:/opt/gradle/bin/gradle
+ENV PATH $PATH:/opt/gradle/bin
 
 CMD ["/opt/gradle/bin/gradle", "--version"]
