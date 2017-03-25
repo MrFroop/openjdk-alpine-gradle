@@ -2,14 +2,12 @@ FROM openjdk:8-alpine
 
 MAINTAINER mrfroop <fredrik@jambren.com>
 
-ENV GRADLE_VERSION=3.3 
+ENV GRADLE_VERSION=3.4
 ENV GRADLE_HOME=/opt/gradle
 
 WORKDIR /tmp
 
-RUN apk --no-cache add \
-	curl \
-	libstdc++ 
+RUN apk --no-cache add curl libstdc++
 
 RUN curl -O --location --silent --show-error https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip \
     	&& mkdir /opt \
