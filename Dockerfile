@@ -2,7 +2,7 @@ FROM openjdk:8-alpine
 
 MAINTAINER mrfroop <fredrik@jambren.com>
 
-ENV GRADLE_VERSION=3.4
+ENV GRADLE_VERSION=3.4.1
 ENV GRADLE_HOME=/opt/gradle
 
 WORKDIR /tmp
