@@ -1,8 +1,8 @@
 FROM openjdk:8-alpine
 
-MAINTAINER mrfroop <fredrik@jambren.com>
+LABEL maintainer="mrfroop <fredrik@jambren.com>"
 
-ENV GRADLE_VERSION=3.4.1
+ENV GRADLE_VERSION=4.2.1
 ENV GRADLE_HOME=/opt/gradle
 
 WORKDIR /tmp
